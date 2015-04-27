@@ -1,240 +1,429 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
-
-      <title>How to become a Better Programmer</title>
-
-      <meta name="description" content="Being a good programmer is difficult and noble. It is not a job done in isolation, but something that requires coordinated team work to achieve the required results. This presentation discusses things that you have to do in order to become a better programmer
+<head>
+  <meta charset="utf-8">
+  <title>How to become a Better Programmer</title>
+  <meta name="description" content="Being a good programmer is difficult and noble. It is not a job done in isolation, but something that requires coordinated team work to achieve the required results. This presentation discusses things that you have to do in order to become a better programmer
 ">
-      <meta name="author" content="Pradeep Varma Dantuluri">
-
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
+  <meta name="author" content="Pradeep Varma Dantuluri">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css" id="theme">
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <!-- Printing and PDF exports -->
+  <script>
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+  <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
+  <div class="reveal">
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+      <section>
+        <h1>How to be a Better Programmer</h1>
+        <h3>A Short and Comprehensive Summary</h3>
+        <p>
+          <small>Created by <a href="http://pradeepvarma.in">Pradeep Dantuluri</a> / <a href="http://twitter.com/pradeepvarma">@pradeepvarma</a></small>
+        </p>
+        <p>
+          <small>Heavily based on <a href="http://www.goodreads.com/book/show/8666855-how-to-be-a-programmer">Robert Read's Book</a> and <a href="http://samizdat.mines.edu/howto/HowToBeAProgrammer.html#id2839027">Article</a></small>
+        </p>
+        <p>
+          <small>Slides are available online at <a href="http://pradeep122.github.io/better-programmer/#/">pradeep122.github.io/better-programmer</a></small>
+        </p>
+      </section>
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Programming is a team sport. And you can get better at it everyday. This presentation will guide you towards it.
+        </p>
+        <ol class="fragment roll-in"> You need to get better everyday at
+          <li class="fragment roll-in">Personal Skills</li>
+          <li class="fragment roll-in">Team Skills</li>
+          <li class="fragment roll-in">Judgement</li>
+        </ol>
+      </section>
+      <!--///////////////////////////////////////-->
+      <!--//  Personal Skills-->
+      <!--///////////////////////////////////////-->
+      <section>
+        <h1>Personal Skills</h1>
+        <h3>Skills that can be acquired by individual programmers</h3>
+      </section>
+      <section>
+        <section>
+          <h2>Learn to Debug</h2>
+          <blockquote class="fragment roll-in"> <em>To see into the execution of a program by examining it</em></blockquote>
+          <p class="fragment roll-in">Primary skill for a programmer</p>
+          <p class="fragment roll-in">A programmer who cannot debug is blind</p>
+          <p class="fragment roll-in">Debugging is immense fun and a source of satisfaction</p>
+          <p class="fragment roll-in">Debugging requires creativity and ingenuity</p>
+          <p class="fragment roll-in">Never be afraid to debug and modify code</p>
+          <br>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>You are surrounded by <em>Imperfect</em> code</h2>
+          <p class="fragment roll-in">You don't understand why the code is failing?</p>
+          <p class="fragment roll-in">Undocumented features? </p>
+          <p class="fragment roll-in">Weird bugs and errors?</p>
+          <blockquote class="fragment roll-in">You must <em>debug</em></blockquote>
+        </section>
+        <section>
+          <h2>How to Debug </h2>
+          <ol>
+            <li class="fragment roll-in"><b>Use a debugging tool </b>: Fine-grained control</li>
+            <li class="fragment roll-in"><b>Printlining </b>: Temporarily add lines that print program information</li>
+            <li class="fragment roll-in"><b>Logging </b>: Permanent Window into the program execution</li>
+          </ol>
+          <p class="fragment roll-in">Debugging tools are wonderful when they are available, But only avaiblable in dev environment</p>
+          <p class="fragment roll-in">Printlining is quick and easy</p>
+          <p class="fragment roll-in">Logging, when well designed and thorough, is absolutely wonderful!</p>
+        </section>
+        <section>
+          <h2>Splitting the Problem Space</h2>
+          <blockquote class="fragment roll-in"> <em>Divide and Conquer</em></blockquote>
+          <ol>
+            <li class="fragment roll-in">Can you design an experiment to isolate the code responsible for the crash?</li>
+            <li class="fragment roll-in"> Narrow down the problem space by breaking it apart. </li>
+          </ol>
+        </section>
+        <section>
+          <h2>Debugging using a Log</h2>
+          <p class="fragment roll-in">Logs help you understand the many simple things as well as the overall complexity of a huge Software System </p>
+          <p class="fragment roll-in"> The information provided by Logs should be configurable</p>
+          <ol class="fragment roll-in"> Logs should -
+            <li class="fragment roll-in">Provide information about bugs that are hard to reprodruce.</li>
+            <li class="fragment roll-in">Provide statistics and data relevant to performance.</li>
+            <li class="fragment roll-in">Allow debugging unanticipated problems whitout modifyng and redeploying code</li>
+          </ol>
+          <p class="fragment roll-in">Amount of logs should always be optimum. <span class="fragment">Too much logs, make it harder to find the required information,</span> <span class="fragment">and too little logs may not have the required information</span></p>
+        </section>
+        <section>
+          <h2>How to add Logging</h2>
+          <ul class="fragment roll-in">Each record in the log should identify
+            <li class="fragment roll-in"> Position in source code</li>
+            <li class="fragment roll-in"> Precise time of execution</li>
+            <li class="fragment roll-in"> Thread executed if applicable</li>
+            <li class="fragment roll-in"> Some useful peice of information stored in a variable</li>
+            <li class="fragment roll-in"> An assigned level (TRACE, DEBUG, INFO, WARN, ERROR)</li>
+          </ul>
+          <br>
+          <br>
+          <ul class="fragment roll-in"> Log statements should be sprinkled across the code, particularly around
+            <li class="fragment roll-in"> Major Functionality</li>
+            <li class="fragment roll-in"> Risky Code</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Dealing with Performance Problems</h2>
+          <blockquote class="fragment roll-in">90% of the execution time is spent in 10% of the code</blockquote>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>How to approach Performance Problems</h2>
+          <ul class="fragment roll-in"> When you are faced with slow code :
+            <li class="fragment roll-in">First build a mental model.</li>
+            <li class="fragment roll-in"> Use a profiling tool or a good log to determine where the time and resources are spent</li>
+            <li class="fragment roll-in"> Usually expensive I/O is a prime suspect. </li>
+          </ul>
+        </section>
+        <section>
+          <h2> Fixing Performance Problems</h2>
+          <ul class="fragment roll-in"> Performance of just released Software can be improved 10 to 100 times with little effort, because of all the short-cuts taken to meet deadlines
+            <li class="fragment roll-in"> Key is to analyze the system and find the <em>bottlenecks</em></li>
+            <li class="fragment roll-in"> Create experiments to easily reproduce the performance degradation at the <em>bottlenecks</em></li>
+            <li class="fragment roll-in"> Target the low hanging fruit of <em>bottlenecks</em> first </li>
+            <li class="fragment roll-in"> Constantly test your fixes against the experiments to confirm performance improvements </li>
+          </ul>
+          <p class="fragment roll-in"> Proposing a re-design should always be the last resort</p>
+        </section>
+        <section>
+          <h2> Low hanging Fruit</h2>
+          <ul class="fragment roll-in">Low hanging fruit can be easily picked and provide an immediate benifit to the performance. Examples include
+            <li class="fragment roll-in"> Failing to to provide a proper index to a DB table</li>
+            <li class="fragment roll-in"> Doing unnecessary I/O in inner loops</li>
+            <li class="fragment roll-in"> Failing to remove / deallocate objects when they are no longer required</li>
+            <li class="fragment roll-in"> Leaving debug statements that are not required</li>
+            <li class="fragment roll-in"> Wrong use of APIs for poorly documented external libraries.</li>
+          </ul>
+        </section>
+      </section>
+      <!--///////////////////////////////////////-->
+      <!--//  Team Skills-->
+      <!--///////////////////////////////////////-->
+      <section>
+        <h1>Team Skills</h1>
+        <h3>Skills you need to work efficiently in a team a diverse characters</h3>
+      </section>
+      <section>
+        <section>
+          <h2>Estimation</h2>
+          <blockquote class="fragment roll-in"> <em>I promise to do it in 5 weeks</em></blockquote>
+          <p class="fragment roll-in">I estimate that, if I really understand the problem, it is about 50% likely that we will be done in five weeks (if no one bothers us during that time).</p>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Estimation is important</h2>
+          <p class="fragment roll-in">A Commercial Software System includes
+            <span class="fragment">development,</span>
+            <span class="fragment">documentation, </span>
+            <span class="fragment">deployment, </span>
+            <span class="fragment">marketing, </span>
+            <span class="fragment">sales and </span>
+            <span class="fragment">finance.</span>
+          </p>
+          <p class="fragment roll-in">Without predicting development time, it is impossible to plan the rest</p>
+          <p class="fragment roll-in">Good estimation provides that predicability</p>
+          <blockquote class="fragment roll-in">So <em>Managers </em> love it</blockquote>
+        </section>
+        <section>
+          <h2>But Estimation is Hard </h2>
+          <p class="fragment roll-in">In fact it is impossible to estimate accurately</p>
+          <p class="fragment roll-in">Developers often under-estimate</p>
+          <p class="fragment roll-in">Managers often over-estimate</p>
+          <p class="fragment roll-in">As long as both parties communicate often and state the assumptions, we minimize failures</p>
+          <p class="fragment roll-in">Honest Estimation takes time and practice, you wont get it right the first time</p>
+          <p class="fragment roll-in">On-the-spot estimations wont be accurate or honest</p>
+        </section>
+        <section>
+          <h2>How to Estimate </h2>
+          <p class="fragment roll-in">Stall and prototype the task, if pressure permits</p>
+          <p class="fragment roll-in">Pad extra-time to your estimates, explicitly</p>
+          <p class="fragment roll-in">Implicityly padding extra-time to your estimates may also work, but will deplete trust within the team</p>
+          <p class="fragment roll-in">State forcefully when you cannot estimate due to a big unknown risk</p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>How to get Information from People</h2>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Ask Questions</h2>
+          <ul class="fragment roll-in"> Ask a lot of Questions, but
+            <li class="fragment roll-in"> Respect every person's time and balance it against your own</li>
+            <li class="fragment roll-in"> The value diminishes the more you do it.</li>
+            <li class="fragment roll-in"> Time is the most precious commodity a person has, and differs in value from person to person</li>
+          </ul>
+        </section>
+        <section>
+          <h2> Cost vs Benifit</h2>
+          <ul class="fragment roll-in"> Everyone benifits from talking to you
+            <li class="fragment roll-in"> They learn more about you, get a different perspective on a question and might enjoyyour presence</li>
+            <li class="fragment roll-in"> You will learn more about them and may learn the answer you seek</li>
+            <li class="fragment roll-in"> But the more they talk to you, the less benifit they derive</li>
+          </ul>
+        </section>
+      </section>
+      <!--///////////////////////////////////////-->
+      <!--//  Judgement Skills-->
+      <!--///////////////////////////////////////-->
+      <section>
+        <h1>Judgement Skills</h1>
+        <h3>As a programmer, you need to make decisions everyday</h3>
+      </section>
+      <section>
+        <section>
+          <h2>Time Complexity</h2> Vs
+          <h2>Space Complexity</h2>
+          <p class="fragment roll-in">You cannot become a better programmer without knowing the computational complexity theory</p>
+          <ul class="fragment roll-in">You should understand
+            <li class="fragment roll-in">the <em>big O</em> notation </li>
+            <li class="fragment roll-in">difference between <em>constant time</em>, <em>nlog(n)</em> and <em>n squared</em> </li>
+          </ul>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Basics</h2>
+          <ul>
+            <li class="fragment roll-in">
+              <em>Time</em> is the processor cycles used to execute a program
+            </li>
+            <li class="fragment roll-in">
+              <em>Space</em> is the temporary memory used the program during execution
+            </li>
+            <li class="fragment roll-in">
+              <em>Time</em> and <em>Space</em> can be traded off against each other
+            </li>
+            <li class="fragment roll-in">
+              The amount of time it takes to run an algorithm depends on the size of the input
+            </li>
+            <li class="fragment roll-in">
+              If it is has only one loop, going through all the elements of the input , the conplexity is <em>n</em>
+            </li>
+            <li class="fragment roll-in">
+              If it is has nested loops, the conplexity is <em>n squared</em>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>How do you do it </h2>
+          <p class="fragment roll-in">You can save time by maintaining more information, thereby reducing the computation required to calculate it</p>
+          <ul class="fragment roll-in"> Examples -
+            <li class="fragment roll-in"> You can save space by encoding data more tighly, at the expense of spending more computing time to extract it</li>
+            <li class="fragment roll-in"> Caching is possible by taking up more space and replicating the data, but saves a lot of computation time</li>
+          </ul>
+          <blockquote class="fragment roll-in">Using too much memory to save computation time, could also affect other programs jostling for the same memory. So always proceed with caution</blockquote>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h2>Code Quality</h2> Vs
+          <h2>Development Time</h2>
+          <p class="fragment roll-in">Sofware Development is always a compromise between <span class="fragment">what the project does and</span> <span class="fragment">getting the project done</span></p>
+          <p class="fragment roll-in">You are often offended when asked to sacrifice code quality to speed up development </p>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>How to handle it</h2>
+          <ul>
+            <li class="fragment roll-in">
+              First inform the rest of the team and quantify the cost of decrease of quality
+            </li>
+            <li class="fragment roll-in">
+              Explain at what cost the lost ground will be regained in the next cylce
+            </li>
+            <li class="fragment roll-in">
+              If this also affects the Testing efforts , point that out.
+            </li>
+            <li class="fragment roll-in">
+              If it leads to more bugs reported after Testing is done, point that out
+            </li>
+            <li class="fragment roll-in">
+              If you still have to do it, isolate the patch-up code into particular components, that can be easily re-written in the next cycle
+            </li>
+            <li class="fragment roll-in">
+              Let your team know and document the patch up code clearly
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Take Away </h2>
+          <ul>
+            <li class="fragment roll-in"> Good design will be resillient against poor code implementations</li>
+            <li class="fragment roll-in"> With good interfaces and abstractions, eventual rewrites will be far less painful.</li>
+          </ul>
+        </section>
+      </section>
+      <!--       <section>
+        <section>
+          <h2>Evaluating Interviewees</h2>
+          <p class="fragment roll-in">A bad hire, like a bad marriage, is terrible </p>
+          <p class="fragment roll-in">Hiring is a responsiblility of the entire team. </p>
+          <p class="fragment roll-in">A significant portion of everyone's energy should be spent on Hiring. </p>
+          <a class="fragment roll-in" href="#" class="navigate-down">
+            <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+          </a>
+        </section>
+        <section>
+          <h2>Torturous Interviews</h2>
+          <ul>
+            <li class="fragment roll-in">
+              Designed to put the candidate under great stress
+            </li>
+            <li class="fragment roll-in">
+              May reveal character flaws and weaknesses
+            </li>
+            <li class="fragment roll-in">
+              Humans have an astonishinig capacity of self-deception
+            </li>
+            <li class="fragment roll-in">
+              Candidates are generally not honest with interviewers
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>Take Away </h2>
+          <ul>
+            <li class="fragment roll-in"> Good design will be resillient against poor code implementations</li>
+            <li class="fragment roll-in"> With good interfaces and abstractions, eventual rewrites will be far less painful.</li>
+          </ul>
+        </section>
+      </section> -->
+      <section>
+        <h1>Thanks </h1> and
+        <h1> Questions ?</h1>
+        <h3>Read more at Robert Read's <a href="http://samizdat.mines.edu/howto/HowToBeAProgrammer.html#id2839027">Article</a></h3>
+        <p>
+          <small>Slides are available online at <a href="http://pradeep122.github.io/better-programmer/#/">pradeep122.github.io/better-programmer</a></small>
+        </p>
+      </section>
+    </div>
+  </div>
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+  // Full list of configuration options available at:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
 
-		<div class="reveal">
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-              <section>
-                <h1>How to be a Better Programmer</h1>
-                <h3>A Short and Comprehensive Summary</h3>
-                <p>
-                  <small>Created by <a href="http://pradeepvarma.in">Pradeep Dantuluri</a> / <a href="http://twitter.com/pradeepvarma">@pradeepvarma</a></small>
-                </p>
-                <p>
-                  <small>Heavily based on <a href="http://www.goodreads.com/book/show/8666855-how-to-be-a-programmer">Robert Read's Book</a> and <a href="http://samizdat.mines.edu/howto/HowToBeAProgrammer.html#id2839027">Article</a></small>
-                </p>
-              </section>
+    // Optional reveal.js plugins
+    dependencies: [{
+      src: 'lib/js/classList.js',
+      condition: function() {
+        return !document.body.classList;
+      }
+    }, {
+      src: 'plugin/markdown/marked.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/markdown/markdown.js',
+      condition: function() {
+        return !!document.querySelector('[data-markdown]');
+      }
+    }, {
+      src: 'plugin/highlight/highlight.js',
+      async: true,
+      condition: function() {
+        return !!document.querySelector('pre code');
+      },
+      callback: function() {
+        hljs.initHighlightingOnLoad();
+      }
+    }, {
+      src: 'plugin/zoom-js/zoom.js',
+      async: true
+    }, {
+      src: 'plugin/notes/notes.js',
+      async: true
+    }]
+  });
+  </script>
+</body>
 
-              <section>
-                <h2>Introduction</h2>
-                <p>
-                  Programming is a team sport. And you can get better at it everyday. This presentation will guide you towards it.
-                </p>
-                <p>You need to get better everyday at </p>
-                <ol>
-                  <li class="fragment roll-in">Personal Skills</li>
-                  <li class="fragment roll-in">Team Skills</li>
-                  <li class="fragment roll-in">Judgement</li>
-                </ol>
-              </section>
-
-              <!--///////////////////////////////////////-->
-              <!--//  Personal Skills-->
-              <!--///////////////////////////////////////-->
-              <section>
-                <h1>Personal Skills</h1>
-                <h3>Skills that can be acquired by individual programmers</h3>
-              </section>
-
-              <section>
-                <section>
-                  <h2>Learn to Debug</h2>
-                  <blockquote class="fragment roll-in"> <em>To see into the execution of a program by examining it</em></blockquote>
-                  <p class="fragment roll-in">Primary skill for a programmer</p>
-                  <p class="fragment roll-in">A programmer who cannot debug is blind</p>
-                  <p class="fragment roll-in">Never be afraid to debug and modify code</p>
-                  <br>
-                  <a class="fragment roll-in" href="#" class="navigate-down">
-                    <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-                  </a>
-                </section>
-                <section>
-                  <h2>You are surrounded by <em>Imperfect</em> code</h2>
-                  <p class="fragment roll-in">You don't understand why the code is failing?</p>
-                  <p class="fragment roll-in">Undocumented features? </p>
-                  <p class="fragment roll-in">Weird bugs and errors?</p>
-                  <blockquote class="fragment roll-in">You must <em>debug</em></blockquote>
-                </section>
-                <section>
-                  <h2>How to Debug </h2>
-                  <ol>
-                    <li class="fragment roll-in"><b>Use a debugging tool </b>: Fine-grained control</li>
-                    <li class="fragment roll-in"><b>Printlining </b>: Temporarily add lines that print program information</li>
-                    <li class="fragment roll-in"><b>Logging </b>: Permanent Window into the program execution</li>
-                  </ol>
-                  <p class="fragment roll-in">Debugging tools are wonderful when they are available, But only avaiblable in dev environment</p>
-                  <p class="fragment roll-in">Printlining is quick and easy</p>
-                  <p class="fragment roll-in">Logging, when well designed and thorough, is absolutely wonderful!</p>
-                </section>
-              </section>
-
-
-              <!--///////////////////////////////////////-->
-              <!--//  Team Skills-->
-              <!--///////////////////////////////////////-->
-              <section>
-                <h1>Team Skills</h1>
-                <h3>Skills you need to work efficiently in a team a diverse characters</h3>
-              </section>
-
-              <section>
-                <section>
-                  <h2>Estimation</h2>
-                  <blockquote class="fragment roll-in"> <em>I promise to do it in 5 weeks</em></blockquote>
-                  <p class="fragment roll-in">I estimate that, if I really understand the problem, it is about 50% likely that we will be done in five weeks (if no one bothers us during that time).</p>
-                  <a class="fragment roll-in" href="#" class="navigate-down">
-                    <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-                  </a>
-                </section>
-                <section>
-                  <h2>Estimation is important</h2>
-                  <p class="fragment roll-in">A Commercial Software System includes
-                    <span class="fragment">development,</span>
-                    <span class="fragment">documentation, </span>
-                    <span class="fragment">deployment, </span>
-                    <span class="fragment">marketing, </span>
-                    <span class="fragment">sales and </span>
-                    <span class="fragment">finance.</span>
-                  </p>
-                  <p class="fragment roll-in">Without predicting development time, it is impossible to plan the rest</p>
-                  <p class="fragment roll-in">Good estimation provides that predicability</p>
-                  <blockquote class="fragment roll-in">So <em>Managers </em> love it</blockquote>
-                </section>
-                <section>
-                  <h2>But Estimation is Hard </h2>
-                  <p class="fragment roll-in">In fact it is impossible to estimate accurately</p>
-                  <p class="fragment roll-in">Developers often under-estimate</p>
-                  <p class="fragment roll-in">Managers often over-estimate</p>
-                  <p class="fragment roll-in">As long as both parties communicate often and state the assumptions, we minimize failures</p>
-                  <p class="fragment roll-in">Honest Estimation takes time and practice, you wont get it right the first time</p>
-                  <p class="fragment roll-in">On-the-spot estimations wont be accurate or honest</p>
-                </section>
-                <section>
-                  <h2>How to Estimate </h2>
-                  <p class="fragment roll-in">Stall and prototype the task, if pressure permits</p>
-                  <p class="fragment roll-in">Pad extra-time to your estimates, explicitly</p>
-                  <p class="fragment roll-in">Implicityly padding extra-time to your estimates may also work, but will deplete trust within the team</p>
-                  <p class="fragment roll-in">State forcefully when you cannot estimate due to a big unknown risk</p>
-                </section>
-              </section>
-
-              <!--///////////////////////////////////////-->
-              <!--//  Judgement Skills-->
-              <!--///////////////////////////////////////-->
-              <section>
-                <h1>Judgement Skills</h1>
-                <h3>As a programmer, you need to make decisions everyday</h3>
-              </section>
-
-              <section>
-                <section>
-                  <h2>Code Quality</h2> Vs <h2>Development Time</h2>
-                  <p class="fragment roll-in">Sofware Development is always a compromise between <span class="fragment">what the project does and</span>  <span class="fragment">getting the project done</span></p>
-                  <p class="fragment roll-in">You are often offended when asked to sacrifice code quality to speed up development </p>
-                  <a class="fragment roll-in" href="#" class="navigate-down">
-                    <img width="44" height="59" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-                  </a>
-                </section>
-                <section>
-                  <h2>How to handle it</h2>
-                  <ul>
-                      <li class="fragment roll-in">
-                      	First inform the rest of the team and quantify the cost of decrease of quality 
-                      </li>
-                      <li class="fragment roll-in">
-                      	Explain at what cost the lost ground will be regained in the next cylce
-                      </li>
-                      <li class="fragment roll-in">
-                      	If this also affects the Testing efforts , point that out.
-                      </li>
-                      <li class="fragment roll-in">
-                      	If it leads to more bugs reported after Testing is done, point that out
-                      </li>
-                      <li class="fragment roll-in">
-                      	If you still have to do it, isolate the patch-up code into particular components, that can be easily re-written in the next cycle
-                      </li>
-                      <li class="fragment roll-in">
-                      	Let your team know and document the patch up code clearly
-                      </li>
-                  </ul>
-                </section>
-                <section>
-                  <h2>Take Away </h2>
-                  <ul>
-	                  <li class="fragment roll-in"> Good design will be resillient against poor code implementations</li>
-	                  <li class="fragment roll-in"> With good interfaces and abstractions, eventual rewrites will be far less painful.</li>
-                  </ul>
-                </section>
-              </section>
-
-			</div>
-
-		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
-
-		</script>
-
-	</body>
 </html>
